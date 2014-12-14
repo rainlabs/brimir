@@ -36,10 +36,14 @@ ru:
 
 # tickets/index
   count_tickets:
+    none: '%{count} заявок'
     one: '%{count} заявка'
+    many: '%{count} заявки'
     other: '%{count} заявок'
   count_tickets_containing:
+    none: '%{count} заявок, содержат'
     one: '%{count} заявка, содержит'
+    many: '%{count} заявки, содержат'
     other: '%{count} заявок, содержат'
   priority: 'Приоритет'
   replies: 'ответов'
@@ -56,7 +60,9 @@ ru:
   status: 'Статус'
   assignee: 'Ответственный'
   num_replies:
+    none: '%{count} ответов'
     one: '%{count} ответ'
+    many: '%{count} ответа'
     other: '%{count} ответов'
   ago: 'назад'
   high: 'Высокий'

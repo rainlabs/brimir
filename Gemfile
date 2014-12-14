@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'rb-readline'
 gem 'rails', '~> 4.1.0'
 
 gem 'sass-rails', '~> 4.0.0'
@@ -19,16 +20,14 @@ group :development do
   # to use debugger
   gem 'byebug'
 
-  # sqlite database during development
-  gem 'sqlite3'
-
   # deploy with Capistrano
   gem 'capistrano'
-  gem 'capistrano-rvm'
+  gem 'capistrano-rbenv'
   gem 'capistrano-rails'
 
   # Spring application pre-loader
   gem 'spring'
+  gem 'thin'
 end
 
 group :test do
@@ -40,9 +39,7 @@ group :test do
 end
 
 # Optional PostgreSQL for production
-gem 'pg', group: :postgresql
-# Optional MySQL for production
-gem 'mysql2', group: :mysql
+gem 'pg'
 
 # authentication
 gem 'devise'
